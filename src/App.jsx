@@ -9,14 +9,19 @@ function App() {
   // let counter = 5
 
   const addValue = () => {
-    counter = counter + 1
-    console.log("Clicked for add value", counter)
-    setCounter(counter)
+    if(counter<=19){
+
+      setCounter(counter+1)
+      console.log("Clicked when add value", counter)
+    }
   }
 
   const removeValue = () => {
-    setCounter(counter - 1)
-    console.log("Clicked for remove value", counter)
+    if(counter>=1){
+
+      setCounter(counter - 1)
+      console.log("Clicked when remove value", counter)
+    }
   }
   
   return (
